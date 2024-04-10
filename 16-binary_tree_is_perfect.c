@@ -74,10 +74,8 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	height = binary_tree_height(tree);
 	size = binary_tree_size(tree);
-	printf("%d\n",size);
 	supposed_size = _pow_recursion(2, height);
 	su_siz = supposed_size - 1;
-	printf("%d\n",su_siz);
 	if (size == 1)
 		return (1);
 
