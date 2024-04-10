@@ -80,6 +80,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	supposed_size = _pow_recursion(2, height);
 	su_siz = supposed_size - 1;
 
+	if (size == 1)
+		return(1);
+
 	if (size == su_siz)
 		return (1);
 	return (0);
