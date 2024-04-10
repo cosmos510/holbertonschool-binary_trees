@@ -36,7 +36,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	int depth_left, depth_right;
 
 	if (tree == NULL)
-		return (1);
+		return (0);
 
 	depth_left = binary_tree_height(tree->left);
 	depth_right = binary_tree_height(tree->right);
